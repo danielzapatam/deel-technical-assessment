@@ -3,11 +3,7 @@ const { Op, literal } = require('sequelize')
 const DeelError = require('../exceptions/deelError')
 
 async function findById(id) {
-  return await Profile.findOne({
-    where: {
-      id,
-    },
-  })
+  return await Profile.findByPk(id)
 }
 
 async function substractToBalanceById(id, value, transaction) {
