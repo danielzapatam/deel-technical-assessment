@@ -37,7 +37,8 @@ As a conclusion of all this technical assessment: I tried to do my best because 
 
 Please please and please (Hahaha): if something goes wrong or you have any doubts about something, please contact me. I would be happy to help you with whatever you need.
 
-NOTE: to test the admin endpoints, please use user with `id` 9, which has `type` `admin`.
+NOTE 1: to test the admin endpoints, please use user with `id` 9, which has `type` `admin`.
+NOTE 2: I felt free to change the folder structure you gave me at the start. That structure is explained [here](#architecture).
 
 ## First part
 
