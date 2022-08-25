@@ -16,7 +16,7 @@ async function substractToBalanceById(id, value, transaction) {
         where: {
           id,
           balance: {
-            [Op.gte]: value, // This is the key to avoid strange results.
+            [Op.gte]: value, // This is the key to avoid strange results when there's concurrency in the same record.
             // I need to validate here, in the db, so that the db makes the operation without latency
           },
         },
